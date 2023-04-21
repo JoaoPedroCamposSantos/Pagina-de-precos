@@ -1,0 +1,118 @@
+/* estilo geral */
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{   
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at center, blue 0, rgb(10, 10, 255), rgb(15, 15, 255) 100%);
+    background-size: contain;
+}
+
+/* estilo da página */
+
+/* estilo do titulo */
+#title-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    color: white;
+}
+#title-container h1{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+#title-container img{
+    width: 80px;
+    filter: invert(100%)
+}
+
+/* estilo da apresentação */
+#presentation-container{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* estilo dos cards */
+#prices-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#big-offer, #medium-offer, #small-offer{
+    width: 400px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+#prices-container h3{
+    font-size: 3rem;
+    text-align: center;
+}
+.that-has img{
+    width: 15px;
+}
+.that-has{
+    color: rgb(73, 73, 73);
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    margin: 10px;
+}
+.dont-has img{
+    width: 15px;
+}
+.dont-has{
+    color: rgb(73, 73, 73);
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    margin: 10px;
+}
+.price{
+    font-size: 3rem;
+    text-align: center;
+}
+.period{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#prices-container input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#prices-container input[type="submit"]{
+    color: white;
+    font-size: 2rem;
+    border: 10px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    display: block;
+    margin: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    transition: 0.3s;
+}
+#prices-container input[type="submit"]:hover{
+    border: 10px solid rgb(0, 0, 118);
+    background-color: rgb(0, 0, 118);
+    cursor: pointer;
+}
+#privacy-politicy{
+    color: white;
+    text-align: center;
+}
+#privacy-politicy a{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
